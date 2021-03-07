@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="script/jquery-1.10.2.min.js"></script>-->
+    <script type="text/javascript" src="script/fiber.min.js"></script>
+    <script type="text/javascript" src="http://code.responsivevoice.org/responsivevoice.js"></script>
+    <script type="text/javascript" src="script/jquery.mousewheel.min.js"></script>
+
+    <script type="text/javascript" src="script/util.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/constants.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/IGui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/aircraft.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/waypoint.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/airport.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/radar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/gameControl.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/windowControl.js" charset="utf-8"></script>
+
+    <script type="text/javascript" src="script/page.js"></script>
+    <script type="text/javascript" src="script/command.js"></script>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>Saddalim ATC</title>
+</head>
+<body>
+
+<div class="map">
+    <canvas id="map" width="800" height="500"></canvas>
+</div>
+<div class="lists" id="aircraftList">
+
+</div>
+<div class="comms">
+    <input type="text" id="commandInput" placeholder="Command...">
+    <br>
+    <span id="incomm"></span>
+</div>
+<div class="controls">
+    <button type="button" id="pauseBtn">Pause</button>
+    <button type="button" id="muteBtn">Mute</button>
+    Speed
+    <button type="button" class="speedBtn" id="normalSpdBtn">x1</button>
+    <button type="button" class="speedBtn" id="doubleSpdBtn">x2</button>
+    <button type="button" class="speedBtn" id="quadSpdBtn">x4</button>
+</div>
+</body>
+</html>

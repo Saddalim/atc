@@ -1,0 +1,143 @@
+
+@font-face {
+    font-family: Airbus;
+    src: url(AirbusMCDUa.ttf);
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #171720;
+    color: #ccc;
+}
+
+div.map {
+    float: left;
+}
+
+div.lists {
+    border: 1px solid #666;
+    width: 305px;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+div.comms {
+    float: left;
+}
+
+div.controls {
+    float: left;
+    width: 305px;
+}
+
+div.controls button {
+    padding: 3px;
+    margin-right: 3px;
+    border: 3px solid #666;
+}
+
+div.controls button:hover {
+    cursor: pointer;
+    background: #999;
+}
+
+span#incomm {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+div.plane {
+    width: 280px;
+    height: 80px;
+    background: #333;
+    margin-bottom: 5px;
+    padding: 4px;
+    font-family: Airbus, sans-serif;
+}
+
+div.plane:hover {
+    cursor: pointer;
+}
+
+div.plane.arriving {
+    background: #333933;
+}
+
+div.plane.departing {
+    background: #333344;
+}
+
+div.plane.passing {
+    background: #393933;
+}
+
+div.planeLeft {
+    float: left;
+}
+
+div.planeRight {
+    float: right;
+}
+
+span.plCallsign {
+    color: #ccc;
+}
+
+span.plState {
+    color: #999;
+}
+
+span.plTgtName {
+    color: #66c;
+}
+
+span.plDir {
+    color: #39f;
+}
+
+span.plTgtDir {
+    color: #336bff;
+}
+
+span.plSpd {
+    color: #00e805;
+}
+
+span.plTgtSpd {
+    color: #00b300;
+}
+
+span.plAlt {
+    color: #e62e00;
+}
+
+span.plTgtAlt {
+    color: #b32400;
+}
+
+canvas#map {
+    border: 1px solid #666;
+    background: #171720;
+}
+
+input#commandInput {
+    width: 800px;
+    height: 22px;
+    font-size: 20px;
+}
+
+button.speedBtn:disabled, button.speedBtn:disabled:hover {
+    background: #ccc;
+    border-color: #d33;
+}
+
+button.speedBtn:disabled:hover {
+    cursor: default;
+}
